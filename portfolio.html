@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Kirabo Prosper</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* Base styling */
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        background-color: #fff0f5; /* soft white/pink background */
+        margin: 0;
+        padding: 0;
+        color: #333;
+    }
+
+  
+    .section {
+        padding: 60px 20px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        color: #C21833;;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    /* Recent Projects Grid */
+    .grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px; /* more spacing */
+        flex-wrap: wrap;
+    }
+
+    .card {
+        border: 1px solid #ffccd5;
+        border-radius: 15px;
+        padding: 25px;
+        width: 270px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        background-color: #fff;
+    }
+
+    .card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 25px rgba(230, 57, 70, 0.3);
+    }
+
+    /* Content Blocks */
+    .content-block {
+        margin-bottom: 60px;
+    }
+
+    .content-block h3 {
+        color: #C21833;;
+        font-weight: bold;
+        font-size: 1.6rem;
+        margin-bottom: 12px;
+    }
+
+    .description {
+        color: #333;
+        line-height: 1.8;
+        margin-bottom: 25px;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .description:hover {
+        transform: translateY(-3px);
+        color: #C21833;;
+        cursor: pointer;
+    }
+
+    /* TikTok Carousel */
+    .carousel-wrapper {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin: 40px 0;
+    }
+
+    .phone-carousel {
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+        gap: 35px; /* more horizontal spacing */
+        padding: 15px 0;
+        scrollbar-width: none;
+    }
+
+    .phone-carousel::-webkit-scrollbar {
+        display: none;
+    }
+
+    .phone {
+        min-width: 350px; /* wider video cards */
+        flex: none;
+        border-radius: 15px;
+        overflow: hidden;
+        box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
+    }
+
+    .phone:hover {
+        transform: scale(1.02);
+    }
+
+    .phone iframe {
+        width: 100%;
+        height: 500px;
+        border: none;
+    }
+
+    .nav {
+        background-color: rgba(230, 57, 70, 0.8);
+        color: #fff;
+        border: none;
+        font-size: 2rem;
+        padding: 0 18px;
+        cursor: pointer;
+        border-radius: 5px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+        transition: background-color 0.3s;
+    }
+
+    .nav.left {
+        left: -10px;
+    }
+
+    .nav.right {
+        right: -10px;
+    }
+
+    .nav:hover {
+        background-color: #C21833;;
+    }
+
+    /* About Me */
+    .about-me {
+        text-align: center;
+        max-width: 850px;
+        margin: 0 auto;
+        line-height: 1.8;
+        font-size: 1.15rem;
+        color: #333;
+        padding: 0 10px;
+        transition: transform 0.3s;
+    }
+
+    .about-me:hover {
+        transform: translateY(-3px);
+        color: #C21833;;
+    }
+
+    /* Social Links */
+    .social-links {
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .social-links a {
+        margin: 0 15px;
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: #C21833;;
+        transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.3);
+        color:#C21833;;
+    }
+
+    footer {
+        text-align: center;
+        padding: 25px;
+        background-color: #fff;
+        color: #555;
+    }
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <h2>Kirabo Prosper</h2>
+    <div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<!-- Recent Projects Section -->
+<section class="section">
+    <h2 class="section-title">Recent Projects</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>Tech Reviews</h3>
+            <p>Relatable tech content & creator tools.</p>
+        </div>
+        <div class="card">
+            <h3>Beauty Campaigns</h3>
+            <p>Soft glam & skincare storytelling.</p>
+        </div>
+        <div class="card">
+            <h3>Lifestyle Content</h3>
+            <p>Routines, self-care & daily inspiration.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TikTok Content Blocks -->
+<section class="section">
+
+    <!-- ADVICE -->
+    <div class="content-block">
+        <h3>🧠 Advice Content</h3>
+        <p class="description">
+            My advice content focuses on personal growth, confidence, and navigating everyday life as a young woman.
+            I connect deeply with my audience through honest, engaging, and relatable storytelling.
+        </p>
+        <div class="carousel-wrapper">
+            <button class="nav left" onclick="scrollRow(this, -1)">‹</button>
+            <div class="phone-carousel">
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7587687869175663883" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7599610997082574101" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7613298391736519956" allowfullscreen></iframe></div>
+            </div>
+            <button class="nav right" onclick="scrollRow(this, 1)">›</button>
+        </div>
+    </div>
+
+    <!-- LIFESTYLE -->
+    <div class="content-block">
+        <h3>🌿 Lifestyle Content</h3>
+        <p class="description">
+            I share soft lifestyle content centered around routines, self-care, and intentional living.
+            My content creates a calm, aesthetic experience that encourages balance and mindful habits.
+        </p>
+        <div class="carousel-wrapper">
+            <button class="nav left" onclick="scrollRow(this, -1)">‹</button>
+            <div class="phone-carousel">
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7611457104624340245" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7609231832374136084" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7608534803947752724" allowfullscreen></iframe></div>
+            </div>
+            <button class="nav right" onclick="scrollRow(this, 1)">›</button>
+        </div>
+    </div>
+
+    <!-- BEAUTY -->
+    <div class="content-block">
+        <h3>💄 Beauty & Fashion</h3>
+        <p class="description">
+            My beauty content highlights soft glam, skincare, and styling in a natural and relatable way.
+            I focus on enhancing confidence while keeping the content visually appealing and authentic.
+        </p>
+        <div class="carousel-wrapper">
+            <button class="nav left" onclick="scrollRow(this, -1)">‹</button>
+            <div class="phone-carousel">
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7596965506473626892" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7593963066723798283" allowfullscreen></iframe></div>
+                <div class="phone"><iframe src="https://www.tiktok.com/embed/v2/7617746229581139221" allowfullscreen></iframe></div>
+            </div>
+            <button class="nav right" onclick="scrollRow(this, 1)">›</button>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer>© 2026 Kirabo Prosper</footer>
+
+<script>
+function scrollRow(button, direction) {
+    const carousel = button.parentElement.querySelector('.phone-carousel');
+    const scrollAmount = carousel.clientWidth * 0.8;
+    carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
+}
+</script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,228 @@
+:root {
+    --cherry: #C21833;
+    --soft-pink: #FFF0F5;
+    --blush: #F8C8D8;
+    --white: #ffffff;
+    --text-dark: #2a2a2a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: var(--soft-pink);
+    color: var(--text-dark);
+}
+
+/* NAVBAR */
+nav {
+    background: var(--white);
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+nav h2 {
+   
+    color: #C21833;;font-family: 'Playfair Display', serif;
+    font-size: 1.8rem;
+    font-weight: 700; /* cherry red */
+    margin: 0; animation: fadeDown 1s ease;
+}
+
+
+
+nav a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: var(--cherry);
+}
+/* BANNER IMAGE */
+.banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+/* HERO */
+.hero {
+    background: linear-gradient(135deg, var(--blush), var(--white));
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: var(--cherry);
+}
+
+.hero p {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 30px;
+    border-radius: 50px;
+    background: var(--cherry);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #9e1428;
+}
+
+/* SECTION */
+.section {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: var(--cherry);
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+/* CARD GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(194,24,51,0.08);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: var(--white);
+    margin-top: 40px;
+    font-size: 14px;
+}
+/* CAROUSEL */
+.carousel-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(194,24,51,0.08);
+    text-align: center;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #C21833;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.carousel-btn.left { left: 10px; }
+.carousel-btn.right { right: 10px; }
+
+@media (max-width: 768px) {
+    .carousel-item {
+        padding: 20px;
+    }
+}
+/* Section Title */
+.section-title {
+    color: var(--cherry);
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Instagram Style Carousel */
+.insta-carousel {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 5px;
+}
+
+.insta-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.insta-card {
+    min-width: 280px;
+    flex: 0 0 auto;
+    border-radius: 20px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 10px 25px rgba(194,24,51,0.1);
+}
+
+.insta-card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.carousel-controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.carousel-controls button {
+    background: var(--cherry);
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
