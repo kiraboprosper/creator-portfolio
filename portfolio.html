@@ -338,100 +338,51 @@ form input:focus, form textarea:focus {
 <section class="section container py-5">
     <h2 class="section-title">Work With Me 🌸</h2>
 
-    <div id="forms-container">
+<!-- Brand Collaboration Form -->
+<section id="brand-form" style="max-width: 600px; margin: 50px auto; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center; color: #b71c1c; margin-bottom: 20px;">Let’s Collaborate</h2>
+  <p style="text-align:center; color:#555;">Share your ideas, timeline, and how we can work together. I’ll get back to you as soon as possible!</p>
 
-        <!-- UGC Videos Form -->
-        <div class="card service-form" id="UGC Videos">
-            <h3>UGC Videos</h3>
-            <p>Authentic user-generated content videos for TikTok, Instagram Reels, and paid campaigns.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="UGC Videos" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+  <form action="mailto:kiraboprosper91@gmail.com" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:15px;">
+    
+    <label for="brand-name">Brand Name:</label>
+    <input type="text" id="brand-name" name="Brand" required placeholder="E.g., MyBrand" 
+           style="padding:10px; border-radius:5px; border:1px solid #ccc;">
 
-        <!-- Product Photography Form -->
-        <div class="card service-form" id="Product Photography">
-            <h3>Product Photography</h3>
-            <p>High-quality product photos with lifestyle and aesthetic styling for social media, websites, and campaigns.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="Product Photography" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+    <label for="contact-person">Contact Person:</label>
+    <input type="text" id="contact-person" name="Contact" required placeholder="E.g., Jane Doe" 
+           style="padding:10px; border-radius:5px; border:1px solid #ccc;">
 
-        <!-- Monthly Content Retainer Form -->
-        <div class="card service-form" id="Monthly Content Retainer">
-            <h3>Monthly Content Retainer</h3>
-            <p>Consistent content packages including videos, photography, and strategy for monthly brand growth.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="Monthly Content Retainer" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="Email" required placeholder="E.g., jane@brand.com" 
+           style="padding:10px; border-radius:5px; border:1px solid #ccc;">
 
-        <!-- Social Media Storytelling Form -->
-        <div class="card service-form" id="Social Media Storytelling">
-            <h3>Social Media Storytelling</h3>
-            <p>Creative storytelling content tailored to your brand’s voice, boosting engagement and building relationships.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="Social Media Storytelling" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+    <label for="campaign">Type of Collaboration:</label>
+    <select id="campaign" name="Campaign" required style="padding:10px; border-radius:5px; border:1px solid #ccc;">
+      <option value="">-- Please choose --</option>
+      <option value="Sponsored Post (Instagram/TikTok)">Sponsored Post (Instagram/TikTok)</option>
+      <option value="Product Review">Product Review</option>
+      <option value="Giveaway / Contest">Giveaway / Contest</option>
+      <option value="Brand Takeover / Story Series">Brand Takeover / Story Series</option>
+      <option value="Content Creation for Brand">Content Creation for Brand</option>
+      <option value="Affiliate Promotion / Discount Codes">Affiliate Promotion / Discount Codes</option>
+      <option value="Other">Other (please specify below)</option>
+    </select>
 
-        <!-- Beauty & Lifestyle Campaigns Form -->
-        <div class="card service-form" id="Beauty & Lifestyle Campaigns">
-            <h3>Beauty & Lifestyle Campaigns</h3>
-            <p>Collaborative campaigns highlighting beauty, self-care, and lifestyle products for vibrant audiences.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="Beauty & Lifestyle Campaigns" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+    <label for="details">Additional Details / Requests:</label>
+    <textarea id="details" name="Details" rows="4" placeholder="Include any extra info, instructions, or ideas..." 
+              style="padding:10px; border-radius:5px; border:1px solid #ccc;"></textarea>
 
-        <!-- Brand Consultation Form -->
-        <div class="card service-form" id="Brand Consultation">
-            <h3>Brand Consultation</h3>
-            <p>Strategic advice on content planning, brand positioning, and influencer marketing for maximum impact.</p>
-            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
-                <input type="text" name="brand_name" placeholder="Brand Name" required>
-                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
-                <input type="email" name="email" placeholder="Email Address" required>
-                <input type="text" name="service" value="Brand Consultation" readonly hidden>
-                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
-                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
-                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
-            </form>
-        </div>
+    <label for="timeline">Preferred Timeline / Dates:</label>
+    <input type="text" id="timeline" name="Timeline" placeholder="E.g., March 15–20" 
+           style="padding:10px; border-radius:5px; border:1px solid #ccc;">
 
-    </div>
+    <button type="submit" style="padding:12px; background-color:#b71c1c; color:white; border:none; border-radius:8px; font-weight:bold; cursor:pointer;">
+      Send Request
+    </button>
+  </form>
 </section>
+       
 
 
 <script>
