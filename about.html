@@ -111,25 +111,28 @@
 
 </section>
 
-<!-- Creator Portfolio Stats Graph -->
-<section id="creator-stats" style="max-width: 700px; margin: 40px auto; font-family: Arial, sans-serif;">
-  <h2 style="text-align: center; color: #e91e63;">My Creator Analytics (Last 60 Days)</h2>
+  <!-- Creator Portfolio Pie Chart -->
+<section id="creator-stats-pie" style="max-width: 500px; margin: 40px auto; font-family: Arial, sans-serif; text-align:center;">
+  <h2 style="color: #b71c1c;">My Creator Analytics (Last 60 Days)</h2>
   
-  <div class="stat-bar">
-    <span class="label">Post Views</span>
-    <div class="bar" style="width: 100%;"><span>699,000</span></div>
+  <div class="pie-chart" style="width: 300px; height: 300px; margin: 30px auto; border-radius: 50%;
+    background: conic-gradient(
+      #b71c1c 0% 81.0%,   /* Post Views: 699,000 / 863,384 total */
+      #c62828 81.0% 83.5%, /* Profile Views: 22,000 */
+      #d32f2f 83.5% 92.3%, /* Likes: 76,000 */
+      #e53935 92.3% 93.8%, /* Comments: 4,505 */
+      #f44336 93.8% 95.0%  /* Shares: 1,879 */
+    );">
   </div>
-  
-  <div class="stat-bar">
-    <span class="label">Profile Views</span>
-    <div class="bar" style="width: 3.15%;"><span>22,000</span></div>
-  </div>
-  
-  <div class="stat-bar">
-    <span class="label">Likes</span>
-    <div class="bar" style="width: 10.88%;"><span>76,000</span></div>
-  </div>
-  
+
+  <ul style="list-style: none; padding: 0; margin-top: 20px; color: #333; text-align:left;">
+    <li><strong style="color:#b71c1c;">Post Views:</strong> 699,000</li>
+    <li><strong style="color:#c62828;">Profile Views:</strong> 22,000</li>
+    <li><strong style="color:#d32f2f;">Likes:</strong> 76,000</li>
+    <li><strong style="color:#e53935;">Comments:</strong> 4,505</li>
+    <li><strong style="color:#f44336;">Shares:</strong> 1,879</li>
+  </ul>
+</section>
   <div class="stat-bar">
     <span class="label">Comments</span>
     <div class="bar" style="width: 0.64%;"><span>4,505</span></div>
