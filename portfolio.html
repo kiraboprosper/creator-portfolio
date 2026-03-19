@@ -184,7 +184,64 @@
         padding: 25px;
         background-color: #fff;
         color: #555;
-    }
+    }ody {
+    background-color: #fff0f5;
+    font-family: Arial, sans-serif;
+}
+
+.navbar h2 {
+    color: #C21833;
+    font-weight: bold;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #C21833;
+    font-weight: bold;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-weight: bold;
+    color: #C21833;
+}
+
+.btn-cherry {
+    background-color: #C21833;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-cherry:hover {
+    background-color: #e63946;
+    color: white;
+}
+
+form input, form textarea {
+    border-radius: 10px;
+    border: 1px solid #ffc2d1;
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #C21833;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(230,57,70,0.15);
+}
+
 </style>
 </head>
 <body>
@@ -196,7 +253,6 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
@@ -279,6 +335,110 @@
 
 </section>
 
+<section class="section container py-5">
+    <h2 class="section-title">Work With Me 🌸</h2>
+
+    <div id="forms-container">
+
+        <!-- UGC Videos Form -->
+        <div class="card service-form" id="UGC Videos">
+            <h3>UGC Videos</h3>
+            <p>Authentic user-generated content videos for TikTok, Instagram Reels, and paid campaigns.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="UGC Videos" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Product Photography Form -->
+        <div class="card service-form" id="Product Photography">
+            <h3>Product Photography</h3>
+            <p>High-quality product photos with lifestyle and aesthetic styling for social media, websites, and campaigns.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="Product Photography" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Monthly Content Retainer Form -->
+        <div class="card service-form" id="Monthly Content Retainer">
+            <h3>Monthly Content Retainer</h3>
+            <p>Consistent content packages including videos, photography, and strategy for monthly brand growth.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="Monthly Content Retainer" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Social Media Storytelling Form -->
+        <div class="card service-form" id="Social Media Storytelling">
+            <h3>Social Media Storytelling</h3>
+            <p>Creative storytelling content tailored to your brand’s voice, boosting engagement and building relationships.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="Social Media Storytelling" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Beauty & Lifestyle Campaigns Form -->
+        <div class="card service-form" id="Beauty & Lifestyle Campaigns">
+            <h3>Beauty & Lifestyle Campaigns</h3>
+            <p>Collaborative campaigns highlighting beauty, self-care, and lifestyle products for vibrant audiences.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="Beauty & Lifestyle Campaigns" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+        <!-- Brand Consultation Form -->
+        <div class="card service-form" id="Brand Consultation">
+            <h3>Brand Consultation</h3>
+            <p>Strategic advice on content planning, brand positioning, and influencer marketing for maximum impact.</p>
+            <form action="https://formsubmit.co/Kiraboprosper91@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="text" name="brand_name" placeholder="Brand Name" required>
+                <input type="text" name="contact_person" placeholder="Contact Person Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="text" name="service" value="Brand Consultation" readonly hidden>
+                <textarea name="project_details" placeholder="Project Details / Message" required></textarea>
+                <input type="file" name="assets" placeholder="Upload Brand Assets (Optional)">
+                <button type="submit" class="btn btn-cherry w-100">Submit Request</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<script>
+
+    }
+});
+</script>
 
 <!-- Footer -->
 <footer>© 2026 Kirabo Prosper</footer>
@@ -288,7 +448,25 @@ function scrollRow(button, direction) {
     const carousel = button.parentElement.querySelector('.phone-carousel');
     const scrollAmount = carousel.clientWidth * 0.8;
     carousel.scrollBy({ left: direction * scrollAmount, behavior: 'smooth' });
-}
+}// Show only the form for the service passed in query parameter
+document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const service = params.get("service"); // e.g., ?service=UGC Videos
+    const allForms = document.querySelectorAll(".service-form");
+    
+    if(service) {
+        allForms.forEach(form => {
+            if(form.id === service){
+                form.style.display = "block";
+                form.scrollIntoView({behavior: "smooth"});
+            } else {
+                form.style.display = "none";
+            }
+        });
+    } else {
+        // Show all forms by default if no query parameter
+        allForms.forEach(form => form.style.display = "block");
+    
 </script>
 <script src="script.js"></script>
 </body>
