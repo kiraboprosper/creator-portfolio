@@ -14,7 +14,34 @@
 
 
 </head>
+<style>
+.stat-bar {
+  margin: 15px 0;
+}
 
+.label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.bar {
+  background-color: #f8bbd0; /* Soft pink */
+  border-radius: 8px;
+  position: relative;
+  height: 30px;
+}
+
+.bar span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+  color: #fff;
+}
+</style>
 <body>
 
 <!-- NAVBAR -->
@@ -24,7 +51,6 @@
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="services.html">Services</a>
         <a href="contact.html">Contact</a>
     </div>
 </nav>
@@ -35,7 +61,7 @@
     <h2 class="section-title"></h2>
 
 <p style="font-size:1.2rem; color:#333; text-align:center; line-height:1.6; animation: fadeIn 2s ease; margin-top:20px;">
-  Hi! I’m <strong>Kirabo Prosper</strong> 🌸 a  Ugandan creator sharing big sister advice, lifestyle inspiration, and beauty tips 💄✨. As a tech student with a love for creating, I bring creativity, authenticity, and a playful spark to every project 🎨💡. I connect with a vibrant, youthful audience who values positivity, fun, and relatable content 🌸.
+  Hi! I’m <strong>Kirabo Prosper</strong> 🌸 a  Ugandan creator sharing big sister advice, lifestyle inspiration, and beauty tips 💄✨.I bring creativity, authenticity, and a playful spark to every project 🎨💡. I connect with a vibrant, youthful audience who values positivity, fun, and relatable content 🌸.
 </p>
 
 <style>
@@ -85,29 +111,37 @@
 
 </section>
 
-<!-- STATISTICS CAROUSEL -->
+<!-- Creator Portfolio Stats Graph -->
+<section id="creator-stats" style="max-width: 700px; margin: 40px auto; font-family: Arial, sans-serif;">
+  <h2 style="text-align: center; color: #e91e63;">My Creator Analytics (Last 60 Days)</h2>
+  
+  <div class="stat-bar">
+    <span class="label">Post Views</span>
+    <div class="bar" style="width: 100%;"><span>699,000</span></div>
+  </div>
+  
+  <div class="stat-bar">
+    <span class="label">Profile Views</span>
+    <div class="bar" style="width: 3.15%;"><span>22,000</span></div>
+  </div>
+  
+  <div class="stat-bar">
+    <span class="label">Likes</span>
+    <div class="bar" style="width: 10.88%;"><span>76,000</span></div>
+  </div>
+  
+  <div class="stat-bar">
+    <span class="label">Comments</span>
+    <div class="bar" style="width: 0.64%;"><span>4,505</span></div>
+  </div>
+  
+  <div class="stat-bar">
+    <span class="label">Shares</span>
+    <div class="bar" style="width: 0.27%;"><span>1,879</span></div>
+  </div>
+</section>
 
-<section class="container py-5">
-    <h2 class="section-title">My Statistics</h2>
 
-```
-<div class="insta-carousel" id="statsCarousel">
-
-    <div class="insta-card">
-        <img src="images/WhatsApp Image 2026-03-17 at 17.33.01.jpeg">
-    </div>
-
-    <div class="insta-card">
-        <img src="images/WhatsApp Image 2026-03-17 at 17.33.08.jpeg">
-    </div>
-
-</div>
-
-<div class="carousel-controls">
-    <button onclick="scrollCarousel('statsCarousel', -1)">‹</button>
-    <button onclick="scrollCarousel('statsCarousel', 1)">›</button>
-</div>
-```
 
 </section>
 
